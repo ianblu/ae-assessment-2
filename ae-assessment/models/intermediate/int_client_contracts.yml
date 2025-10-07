@@ -1,0 +1,19 @@
+version: 2
+
+models:
+  - name: int_client_contracts_customers
+    description: "Staged data for all client contract date."
+    columns:
+      - name: client_id
+        description: "The unique identifier for each customer."
+        tests:
+          - unique
+          - not_null
+      - name: contract_start_date
+        description: "Date contract began if contract exists"
+      - name: contract_end_date
+        description: "Date contract ends (if it exists)"
+      - name: spend_threshold
+        description: "value spend above which discount applies"
+      - name: discounted_fee_margin
+        description: "Th ediscounted fee margin"

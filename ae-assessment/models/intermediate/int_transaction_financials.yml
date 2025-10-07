@@ -1,0 +1,54 @@
+version: 2
+
+models:
+  - name: int_transaction_financials
+    columns:
+      - name: transaction_id
+        data_type: string
+        tests:
+          - unique
+          - not_null
+      - name: client_id
+        data_type: string
+        tests:
+          - not_null
+      - name: spend_threshold
+        data_type: real
+      - name: transaction_date
+        data_type: date
+        tests:
+          - not_null
+      - name: transaction_type
+        data_type: string
+        tests:
+          - not_null
+      - name: transaction_amount
+        data_type: real
+        tests:
+          - not_null
+      - name: currency
+        data_type: string
+        tests:
+          - not_null
+      - name: transaction_amount_gbp
+        data_type: real
+        # tests:
+        #   - not_null
+      - name: accounting_transaction_amount_gbp
+        data_type: real
+        # tests:
+        #   - not_null
+      - name: transaction_charge_gbp
+        data_type: real
+        # tests:
+        #   - not_null
+      - name: accounting_transaction_charge_gpb
+        data_type: real
+        # tests:
+        #   - not_null
+      - name: estimated_currency_rate
+        data_type: string
+        tests:
+          - not_null
+
+

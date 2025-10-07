@@ -1,0 +1,28 @@
+version: 2
+
+models:
+  # Configuration and documentation for models in the 'staging' folder
+  - name: stg_client_contracts
+    description: "Staged data for all client contract date."
+    columns:
+      - name: client_id
+        description: "The unique identifier for each customer."
+        tests:
+          - unique
+          - not_null
+      - name: contract_start_date
+        description: "Date contract began."
+        tests:
+          - not_null
+      - name: contract_duration_months
+        description: "tbc"
+        tests:
+          - not_null
+      - name: spend_threshold
+        description: "tbc."
+        tests:
+          - not_null
+      - name: discounted_fee_margin
+        description: "tbc."
+        tests:
+          - not_null

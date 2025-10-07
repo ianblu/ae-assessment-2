@@ -1,0 +1,21 @@
+[project]
+name = "global-transactions"
+version = "0.1.0"
+description = "Global Transactions Assessment"
+authors = [
+    {name = "ian.blundelluk@gmail.com"}
+]
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "dbt-sqlite (>=1.10.0,<2.0.0)"
+]
+
+[tool.poetry]
+# This section is mandatory for Poetry-specific configurations
+# and overrides the default package mode behavior.
+package-mode = false 
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"

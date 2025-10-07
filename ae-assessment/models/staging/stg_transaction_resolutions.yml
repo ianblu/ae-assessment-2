@@ -1,0 +1,16 @@
+version: 2
+
+models:
+  - name: stg_transaction_resolutions
+    description: "tbc"
+    columns:
+      - name: transaction_id
+        description: "tbc."
+        tests:
+          - not_null
+      - name: resolution_status
+        description: "tbc."
+        tests:
+          - not_null
+      - name: resolution_date
+        description: "tbc."

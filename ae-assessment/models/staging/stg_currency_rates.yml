@@ -1,0 +1,23 @@
+version: 2
+
+models:
+  - name: stg_currency_rates
+    description: "tbc"
+    tests:
+      - dbt_utils.unique_combination_of_columns:
+          combination_of_columns:
+            - currency
+            - rate_date
+    columns:
+      - name: currency
+        description: "The unique identifier for each customer."
+        tests:
+          - not_null
+      - name: rate_date
+        description: "Date contract began."
+        tests:
+          - not_null
+      - name: exchange_rate_to_gbp
+        description: "tbc."
+        tests:
+          - not_null

@@ -1,0 +1,8 @@
+models:
+  - name: dim_client
+    columns:
+      - name: client_sk
+        data_type: integer
+        tests:
+          - unique
+          - not_null

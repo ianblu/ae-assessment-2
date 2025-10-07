@@ -1,0 +1,16 @@
+version: 2
+
+models:
+  - name: int_currency_rates
+    columns:
+      - name: currency
+        data_type: string
+        tests:
+          - not_null
+      - name: rate_date
+        data_type: date
+        tests:
+          - not_null
+      - name: exchange_rate_to_gbp
+
+          

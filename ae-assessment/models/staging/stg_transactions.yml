@@ -1,0 +1,34 @@
+version: 2
+
+models:
+  - name: stg_transactions
+    description: "tbc"
+    columns:
+      - name: transaction_id
+        description: "tbc."
+        tests:
+          - not_null
+      - name: client_id
+        description: "tbc."
+        tests:
+          - not_null
+      - name: transaction_amount
+        description: "tbc."
+        tests:
+          - not_null
+      - name: transaction_type
+        description: "tbc."
+        tests:
+          - not_null
+      - name: transaction_date
+        description: "tbc."
+        tests:
+          - not_null
+      - name: platform_fee_margin
+        description: "tbc."
+      - name: currency
+        tests:
+          - not_null
+        description: "tbc."
+      - name: linked_transaction_id
+        description: "tbc."
